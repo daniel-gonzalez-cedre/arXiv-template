@@ -432,8 +432,8 @@
 \setlength{\headheight}{0in}
 \setlength{\headsep}{0in}
 \setlength{\parindent}{1pc}
-\setlength{\oddsidemargin}{-.2in}
-\setlength{\evensidemargin}{-.2in}
+\setlength{\oddsidemargin}{-13.5pt}
+\setlength{\evensidemargin}{-13.5pt}
 
 
 % memento from size10.clo
@@ -597,18 +597,17 @@
       \AtTextUpperLeft{%
         \put(\LenToUnit{-35pt},\LenToUnit{-\cvprruleroffset}){%left ruler
           \cvprruler{\cvprrulercount}}
-        %\put(\LenToUnit{\textwidth\kern 30pt},\LenToUnit{-\cvprruleroffset})
-        \put(\LenToUnit{\dimexpr \textwidth+30pt},\LenToUnit{-\cvprruleroffset}){%right ruler
+        \put(\LenToUnit{\dimexpr \textwidth+22pt},\LenToUnit{-\cvprruleroffset}){%right ruler
           \cvprruler{\cvprrulercount}}
       }
     \def\pid{\parbox{1in}{\begin{center}\bf\sf{\small \confName}\\\#\cvprPaperID\end{center}}}
       \AtTextUpperLeft{%paperID in corners
         \put(\LenToUnit{-65pt},\LenToUnit{45pt}){\pid}
-        \put(\LenToUnit{\textwidth\kern-8pt},\LenToUnit{45pt}){\pid}
+        \put(\LenToUnit{\dimexpr\textwidth-8pt},\LenToUnit{45pt}){\pid}
       }
       \AtTextUpperLeft{%confidential
         \put(0,\LenToUnit{1cm}){\parbox{\textwidth}{\centering\cvprtenhv
-        \confName~\confYear~Submission \#\cvprPaperID. CONFIDENTIAL REVIEW COPY.  DO NOT DISTRIBUTE.}}
+        \confName~\confYear~Submission \#\cvprPaperID. CONFIDENTIAL REVIEW COPY. DO NOT DISTRIBUTE.}}
       }
   }
 }
